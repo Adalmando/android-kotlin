@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation= "vertical"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:fontFamily="@font/abril_fatface"
+                android:padding="16dp"
+                android:text="Hello world"
+                android:textColor="@color/white"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:fontFamily="@font/abril_fatface"
+                android:padding="16dp"
+                android:text="Hello world"
+                android:textColor="@color/white"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:text="Hello world"
+                android:textColor="@color/white"
+                android:fontFamily="@font/abril_fatface"
+                android:padding="16dp"
+                android:textSize="28sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:text="Hello world"
+                android:textColor="@color/white"
+                android:fontFamily="@font/abril_fatface"
+                android:padding="16dp"
+                android:textSize="28sp"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm a current text in application!"
+                android:textColor="@color/text"
+                android:paddingStart="16dp"
+                android:textSize="28sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm a current text in application number two!"
+                android:textColor="@color/text"
+                android:paddingStart="16dp"
+                android:textSize="28sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text's camps:"
+                android:textColor="@color/text"
+                android:paddingStart="16dp"
+                android:textSize="28sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite seu nome"
+                android:paddingStart="16dp"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite sua idade"
+                android:paddingStart="16dp"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite seu e-mail"
+                android:paddingStart="16dp"
+                android:inputType="textWebEmailAddress"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite seu tipo sanguíneo"
+                android:paddingStart="16dp"
+                android:inputType="text"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Botão"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Icon: OBS(sempre que for mudar a cor não usar android:tint e sim app:tint)"
+                android:textColor="@color/text"
+                android:paddingStart="16dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:src="@drawable/ic_menu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:tint="#950B0B"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="#4E4B4B"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
