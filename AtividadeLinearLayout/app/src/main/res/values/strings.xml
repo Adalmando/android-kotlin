@@ -3,4 +3,5 @@
     <string name="distancia">Distância</string>
     <string name="preco">Preço</string>
     <string name="Autonomia">Autonomia</string>
+    <string name="Invalid_values">Os valores passados são inválidos</string>
 </resources>

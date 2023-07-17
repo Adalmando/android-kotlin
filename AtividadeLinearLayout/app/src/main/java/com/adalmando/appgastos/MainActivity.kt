@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.buttonCalculate.setOnClickListener(this)
     }
 
@@ -23,13 +22,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             calculate()
         }
     }
+
+    private fun isValid(): Boolean{
+        return(binding.editDistance.text.toString() != ""
+                && binding.editPrice.text.toString() != ""
+                && binding.editAutonomy.text.toString() != ""
+                && binding.editAutonomy.text.toString().toFloat() != 0f)
+    }
+
     private fun calculate(){
-        val distance = binding.editDistance.text.toString().toFloat()
-        val price = binding.editPrice.text.toString().toFloat()
-        val autonomy = binding.editAutonomy.text.toString().toFloat()
-        val total = (distance*price)/autonomy
-        // Toast notification:
-        //Toast.makeText(this, "O total gasto é: R$ ${"%.2f".format(total)}", Toast.LENGTH_SHORT).show()
-         binding.textTotalValue.text = "R$ ${"%.2f".format(total)}"
+        if(isValid()){
+            val distance = binding.editDistance.text.toString().toFloat()
+            val price = binding.editPrice.text.toString().toFloat()
+            val autonomy = binding.editAutonomy.text.toString().toFloat()
+            val total = (distance*price)/autonomy
+            binding.textTotalValue.text = "R$ ${"%.2f".format(total)}"
+        } else{
+            //Toast notification:
+            Toast.makeText(this, R.string.Invalid_values, Toast.LENGTH_SHORT).show()
+        }
     }
 }
