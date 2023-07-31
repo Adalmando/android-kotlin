@@ -8,6 +8,7 @@ import com.adalmando.motivation.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -26,10 +27,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     // tenho que implementar a interface do View.OnClickListener na minha classe
     // e aqui tenho que sobrescrever o metodo, passando como parametro uma view:
     override fun onClick(view: View) {
+
         if (view.id == R.id.new_phrase){
             var s = ""
         }
+
     }
-
-
 }
