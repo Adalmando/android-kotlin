@@ -1,11 +1,13 @@
-package com.adalmando.motivation
+package com.adalmando.motivation.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.adalmando.motivation.databinding.ActivityMainBinding
+import com.adalmando.motivation.infra.MotivationConstants
+import com.adalmando.motivation.R
+import com.adalmando.motivation.infra.Security
 import com.adalmando.motivation.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity(), View.OnClickListener {
@@ -18,6 +20,8 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         supportActionBar?.hide()
         binding.login.setOnClickListener(this)
+
+        verifyUserName()
     }
 
     override fun onClick(view: View) {
@@ -28,12 +32,22 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleSave() {
         val name = binding.segundo.text.toString()
-        if (name != "" && name != null) {
+        if (name != "") {
+            // salvando o nome de usuario:
+            Security(this).storeString(MotivationConstants.KEY.USER_NAME, name)
             startActivity(Intent(this, MainActivity::class.java))
-            bindingMain.textOne.text = "Olá, $name!"
+            finish()
         } else {
             Toast.makeText(this, R.string.validation_mandatory_name,
                 Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun verifyUserName(){
+        val name = Security(this).getString(MotivationConstants.KEY.USER_NAME)
+        if(name != ""){
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }
