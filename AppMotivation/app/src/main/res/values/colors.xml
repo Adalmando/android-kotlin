@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="navBarColor">#5A1367</color>
-    <color name="linha">#3A0743</color>
-    <color name="button_main">#5E0F6C</color>
-    <color name="button_user">#C991D1</color>
-</resources>
