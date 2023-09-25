@@ -1,5 +1,7 @@
 package com.adalmando.modifiers
 
+import android.content.res.Configuration
+import android.graphics.Paint.Style
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -26,6 +28,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.adalmando.modifiers.ui.theme.ModifiersTheme
 import org.w3c.dom.Text
+import java.time.format.TextStyle
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,12 +44,29 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyTexts(){
     Row {
-        Column(modifier = Modifier.padding(start = 8.dp)){
-            Text("Hello world", color = Color.Red)
-            Spacer(modifier = Modifier.height(16.dp)) // espaço entre um texto e outro, como eles etao em coluna o espaço fica no meio
-            Text("Hello Ghoul", color = Color.Red)
+        Column(modifier = Modifier
+            .padding(start = 8.dp)){
+            MyText(
+                "Hello world",
+                MaterialTheme.colorScheme.primary
+            )
+
+            Spacer(
+                modifier = Modifier
+                    .height(16.dp)
+            )
+
+            MyText(
+                "Hello Ghoul",
+                MaterialTheme.colorScheme.onBackground
+            )
         }
     }
+}
+
+@Composable
+fun MyText(text: String, color: Color){
+    Text(text = text, color = color)
 }
 
 @Composable
@@ -57,21 +77,24 @@ fun MyImages(){
         modifier = Modifier
             .size(64.dp)
             .clip(CircleShape)
-            .background(Color.Gray)
+            .background(MaterialTheme.colorScheme.primary)
     )
 }
 
 @Composable
 fun MyComponent(){
     Row(modifier = Modifier
-        .padding(8.dp)) {
+        .background(MaterialTheme.colorScheme.background)
+        .padding(8.dp)
+    ) {
         MyImages()
         MyTexts()
     }
 }
 
 @Composable
-@Preview
+@Preview(showSystemUi = true)
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 fun PreviewMyComponent(){
     ModifiersTheme {
         MyComponent()
