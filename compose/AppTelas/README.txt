@@ -1,0 +1,1 @@
+Esse app usa NavController para transacionar de uma tela para outra

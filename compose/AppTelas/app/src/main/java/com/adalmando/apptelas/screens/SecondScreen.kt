@@ -9,14 +9,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 
 @Composable
-fun SecondScreen(){
-    SecondBody()
+fun SecondScreen(navController: NavController){
+    SecondBody(navController)
 }
 
 @Composable
-fun SecondBody(){
+fun SecondBody(navController: NavController){
     Column(
         modifier = Modifier
             .fillMaxSize(),
@@ -34,10 +35,4 @@ fun SecondBody(){
             )
         }
     }
-}
-
-@Composable
-@Preview(showBackground = true)
-fun SecondPreview(){
-    SecondBody()
 }

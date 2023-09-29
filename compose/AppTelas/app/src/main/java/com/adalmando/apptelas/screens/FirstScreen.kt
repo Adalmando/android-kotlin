@@ -12,20 +12,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FirstScreen(): NavGraphBuilder.() -> Unit {
+fun FirstScreen(navController: NavController){
     Scaffold {
-        BodyContent()
+        BodyContent(navController)
     }
 }
 
 
 @Composable
-fun BodyContent(){
+fun BodyContent(navController: NavController){
     Column(
         modifier = Modifier
         .fillMaxSize(),

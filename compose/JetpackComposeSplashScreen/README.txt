@@ -1,0 +1,1 @@
+Esse projeto usa corrotinas e navegação entre telas para mostrar como fazer uma SplashScreen (tela inicial com a logo do app, que fica na tela por poucos segundos e depois passa para a tela Main)
