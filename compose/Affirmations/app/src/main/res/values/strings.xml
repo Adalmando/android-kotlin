@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Affirmations</string>
+
+    <string name="affirmation1">Tu te tornas eternamente responsável por aquilo que cativas.</string>
+    <string name="affirmation2">Não importa a cor do céu, quem faz o dia bonito é você...</string>
+    <string name="affirmation3">Ser feliz sem motivo é a mais autêntica forma de felicidade</string>
+    <string name="affirmation4">Viver é não esperar a tempestade passar... É aprender como dançar na chuva.</string>
+    <string name="affirmation5">Embora ninguém possa voltar atrás e fazer um novo começo, qualquer um pode começar agora e fazer um novo fim.</string>
+    <string name="affirmation6">Às vezes só ouvimos falar de ódio, mas há mais amor neste mundo do que você poderia imaginar.</string>
+    <string name="affirmation7">Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele. As pessoas não conseguem vencer e dizem que você também não vai vencer. Se você quer uma coisa corre atrás.</string>
+    <string name="affirmation8">As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.</string>
+    <string name="affirmation9">Motivação é a arte de fazer as pessoas fazerem o que você quer que elas façam porque elas o querem fazer.</string>
+    <string name="affirmation10">Toda ação humana, quer se torne positiva ou negativa, precisa depender de motivação.</string>
+    <string name="affirmation11">A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento.</string>
+    <string name="affirmation12">A amizade desenvolve a felicidade e reduz o sofrimento, duplicando a nossa alegria e dividindo a nossa dor.</string>
+    <string name="affirmation13">Saber encontrar a alegria na alegria dos outros é o segredo da felicidade.</string>
+    <string name="affirmation14">A alegria de fazer o bem é a única felicidade verdadeira.</string>
+    <string name="affirmation15">O segredo da felicidade é encontrar a nossa alegria na alegria dos outros.</string>
+    <string name="affirmation16">A verdadeira felicidade vem da alegria de atos bem feitos, do sabor de criar coisas renovadas.</string>
+
+    <string name="image_description">Imagem bonita</string>
+
+</resources>
