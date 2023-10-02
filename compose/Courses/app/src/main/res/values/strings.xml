@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Courses</string>
+
+    <string name="theme_1">Architeture</string>
+    <string name="theme_2">Business</string>
+    <string name="theme_3">Design</string>
+    <string name="theme_4">Film</string>
+    <string name="theme_5">Drawing</string>
+    <string name="theme_6">Music</string>
+    <string name="theme_7">Photography</string>
+    <string name="theme_8">Crafts</string>
+    <string name="theme_9">Culinary</string>
+    <string name="theme_10">Fashion</string>
+    <string name="theme_11">Gaming</string>
+    <string name="theme_12">Lifestyle</string>
+    <string name="theme_13">Painting</string>
+    <string name="theme_14">Tech</string>
+
+</resources>
